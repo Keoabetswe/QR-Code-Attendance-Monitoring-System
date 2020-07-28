@@ -1,2 +1,2 @@
-# QR-Code-Attendance-System
-A QR code based student attendance management system
+# QR-Code-Attendance-Monitoring-System
+A QR code based student attendance monitoring system
