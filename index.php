@@ -17,7 +17,7 @@
   </div>
 
   <div>
-    <form method="post" action="lecturerLogin.php">
+    <form action="#">
       <center><button href="lecturerLogin.php" style="width: 100px; height: 30px;">Lecturer</button>   
       <button href="studentLogin.php" style="width: 100px; height: 30px;">Student</button></center>
     </form>
