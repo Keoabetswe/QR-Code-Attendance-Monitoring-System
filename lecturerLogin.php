@@ -17,18 +17,18 @@
   </div>
 
   <div>
-    <form method="post" action="studentLogin.php">
+    <form method="post" action="lecturerLogin.php">
         <?php include('errors.php'); ?>
         <div class="input-group">
-            <label>Student Number</label>
-            <input type="text" name="student_num" >
+            <label>Email</label>
+            <input type="text" name="lecturer_email" >
         </div>
         <div class="input-group">
             <label>Password</label>
-            <input type="password" name="password">
+            <input type="password" name="lecturer_password">
         </div>
         <div class="input-group">
-            <button type="submit" class="btn" name="login_user">Login</button>
+            <button type="submit" class="btn" name="lecturer_login">Login</button>
         </div>
     </form>
     </div>      
