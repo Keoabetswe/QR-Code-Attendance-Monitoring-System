@@ -21,11 +21,15 @@
             <span class="nav__text">Dashboard</span>
           </a>
           <a href="qrCodeScanner.php" class="nav__link">
-            <i class="material-icons nav__icon">camera</i>
-            <span class="nav__text">Scanner</span>
+            <i class="material-icons nav__icon">qr_code</i>
+            <span class="nav__text">Scan Code</span>
           </a>
         </nav>
        </main>
+
+       <div class="header">
+  	    <h2>Attendance Status</h2>
+      </div>
         
     <script src="" async defer></script>
     </body>
