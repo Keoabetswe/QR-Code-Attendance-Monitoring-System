@@ -43,19 +43,18 @@ if (isset($_POST['student_login'])) {
 
 //Lecturer Login
 if (isset($_POST['lecturer_login'])) {
-  $username = mysqli_real_escape_string($db, $_POST['email']);
-  $password = mysqli_real_escape_string($db, $_POST['password']);
+  $lecEmail = mysqli_real_escape_string($db, $_POST['lecturer_email']);
+  $lecPassword = mysqli_real_escape_string($db, $_POST['lecturer_password']);
 
   if (empty($username)) {
-  	array_push($errors, "Student Number is required");
+  	array_push($errors, "Lecturer Email is required");
   }
   if (empty($password)) {
   	array_push($errors, "Password is required");
   }
 
   if (count($errors) == 0) {
-  	$password = md5($password);
-  	$query = "SELECT * FROM student WHERE studentNum='$student_num' AND studentPassword='$password'";
+  	$query = "SELECT * FROM lecturer WHERE lecturer_email ='$lecEmail' AND lecturer_password='$lecPassword'";
   	$results = mysqli_query($db, $query);
   	if (mysqli_num_rows($results) == 1) {
   	  $_SESSION['username'] = $username;
