@@ -1,130 +1,42 @@
 <!DOCTYPE html>
-<html lang="en-us">
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Dashboard</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+       <main> 
+        <nav class="nav">
+          <a href="index.html" class="nav__link">
+            <i class="material-icons nav__icon">dashboard</i>
+            <span class="nav__text">Dashboard</span>
+          </a>
+          <a href="profile.html" class="nav__link nav__link--active">
+            <i class="material-icons nav__icon">person</i>
+            <span class="nav__text">Profile</span>
+          </a>
+          <a href="device.html" class="nav__link">
+            <i class="material-icons nav__icon">devices</i>
+            <span class="nav__text">Devices</span>
+          </a>
+          <a href="privacy.html" class="nav__link">
+            <i class="material-icons nav__icon">lock</i>
+            <span class="nav__text">Privacy</span>
+          </a>
+          <a href="settings.html" class="nav__link">
+            <i class="material-icons nav__icon">settings</i>
+            <span class="nav__text">Settings</span>
+          </a>
+        </nav>
+       </main>
 
-<head>
-    <title>QR Code Attendance System</title>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- Twitter Card-->
-    <meta name="twitter:title" content="Day of Birth Finder">
-    <meta name="twitter:site" content="dob-finder.firebaseapp.com" />
-    <meta name="twitter:creator" content="@iambolajiayo" />
-    <meta name="twitter:description" content="This script checks your Date of Birth and detects the Day of the Week you were born.">
-    <meta name="twitter:image" content="img/icons/icon-96x96.png">
-    <meta name="twitter:card" content="img/icons/icon-96x96.png">
-    <meta name="description" content="This script checks your Date of Birth and detects the Day of the Week you were born.">
-    <!--Open Graph-->
-    <meta property="og:image" content="img/icons/icon-96x96.png">
-    <meta property="og:title" content="Day of Birth Finder" />
-    <meta name="author" content="Bolaji Ayodeji">
-    <meta property="og:description" content="This script checks your Date of Birth and detects the Day of the Week you were born." />
-    <meta name="author" content="Bolaji Ayodeji">
-    <meta property="og:url" content="dob-finder.firebaseapp.com" />
-    <meta property="og:site_name" content="Day of Birth Finder" />
-    <meta property="og:type" content="Day of Birth Finder" />
-
-    <!-- Google Knowledge Graph card -->
-    <script type='application/ld+json'>
-        {
-            "@context": "http://www.schema.org",
-            "@type": "Day of Birth Finder",
-            "name": "Day of Birth Finder",
-            "url": "dob-finder.firebaseapp.com",
-            "logo": "dob-finder.firebaseapp.com/img/icons/icon-96x96.png",
-            "description": "This script checks your Date of Birth and detects the Day of the Week you were born."
-        }
-    </script>
-    <!--Bootstrap CDN-->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
-        crossorigin="anonymous">
-
-    <!--Main Stylesheet-->
-    <link rel="stylesheet" type="text/css" media="screen" href="css/app.css" />
-
-    <!--logo-->
-    <link rel="shortcut icon" href="img/icons/qr code.ico">
-</head>
-
-<body>
-    <div class="jumbotron">
-        <!-- <h1 class="display-4">QR Code Attendance System</h1> -->
-        <img src="img/icons/qr code.ico"  style="width:70px; height:70px;">
-        <p class="lead">QR Code Attendance Monitoring System</p>
-
-        <hr class="my-4">
-    </div>
-    <div class="container">
-        <div class="row">
-
-            <form>
-
-                <div class="alert alert-danger" role="alert">
-                    Enter all dates in numeric format!
-                </div>
-
-
-                <div class="form-group">
-                    <div class="input-group input-group-lg">
-                        <div class="input-group-prepend">
-                            <span class="input-group-text" id="inputGroup-sizing-lg">Day of Birth</span>
-                        </div>
-                        <input type="text" name="day" class="form-control" placeholder="18. ." aria-describedby="inputGroup-sizing-lg">
-                    </div>
-
-                    <div class="input-group input-group-lg">
-                        <div class="input-group-prepend">
-                            <span class="input-group-text" id="inputGroup-sizing-lg">Month of Birth</span>
-                        </div>
-                        <input type="text" name="month" class="form-control" placeholder="8. ." aria-describedby="inputGroup-sizing-lg">
-                    </div>
-
-                    <div class="input-group input-group-lg">
-                        <div class="input-group-prepend">
-                            <span class="input-group-text" id="inputGroup-sizing-lg">Year of Birth</span>
-                        </div>
-                        <input type="text" name="year" class="form-control" placeholder="1970. ." aria-describedby="inputGroup-sizing-lg">
-                    </div>
-                    <br />
-
-                    <button type="button" class="btn btn-primary btn-lg" onclick="compute(this.form)">Submit</button>
-                    <button type="reset" class="btn btn-secondary btn-lg">Clear</button>
-                    <br /><br />
-
-
-                    <div class="input-group mb-3">
-                        <div class="input-group-prepend">
-                            <span class="input-group-text btn btn-primary" id="basic-addon1">Complete Day of Birth</span>
-                        </div>
-                        <input id="result" type="text" name="result1" class="form-control" aria-describedby="basic-addon1"
-                            readonly>
-                    </div>
-
-                    <div class="input-group mb-3">
-                        <div class="input-group-prepend">
-                            <span class="input-group-text btn btn-primary" id="basic-addon1">Final Result</span>
-                        </div>
-                        <input id="result" type="text" name="result2" class="form-control" aria-describedby="basic-addon1"
-                            readonly>
-                    </div>
-                </div>
-            </form>
-        </div>
-    </div>
-
-
-<footer>
-    <div class="alert" style="background-color:#ddd;" role="alert">
-        <hr>
-        <!-- <p class="mb-0 text-center">Developed by; <a href="https://bolajiayodeji.github.io" target="_blank">Bolaji
-                Ayodeji</a></p>
-        <p class="mb-0 text-center">Source code: <a href="https://github.com/BolajiAyodeji/day-of-birth-finder" target="_blank">Github</a>
-            || <a href="https://codepen.io/iambolajiayo/pen/XxPGjo" target="_blank">Codepen</a></p> -->
-    </div>
-</footer>
-
-<script src="js/app.js"></script>
-
-</body>
-
+       <h1>Dashboard</h1>
+        
+        <script src="" async defer></script>
+    </body>
 </html>
