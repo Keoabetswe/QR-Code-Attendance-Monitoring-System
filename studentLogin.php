@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Lecturer Login</title>
+        <title>Student Login</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -25,7 +25,7 @@
         </div>
         <div class="input-group">
             <label>Password</label>
-            <input type="password" name="password">
+            <input type="password" name="student_password">
         </div>
         <div class="input-group">
             <button type="submit" class="btn" name="login_user">Login</button>
