@@ -26,6 +26,12 @@
           </a>
         </nav>
        </main>
+
+      <div class="header">
+  	    <h2>Attendance History</h2>
+      </div>       
+
+
         
     <script src="" async defer></script>
     </body>
