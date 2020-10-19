@@ -20,7 +20,7 @@
             <i class="material-icons nav__icon">dashboard</i>
             <span class="nav__text">Dashboard</span>
           </a>
-          <a href="qrCodeScanner.php" class="nav__link">
+          <a href="qrCodeDecoder.php" class="nav__link">
             <i class="material-icons nav__icon">qr_code</i>
             <span class="nav__text">Scan Code</span>
           </a>
