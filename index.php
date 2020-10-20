@@ -10,34 +10,11 @@
         <link rel="stylesheet" href="css/style.css">
     </head>
     <body>
+      <div class="header">
+        <h2>QR Code Student Attendance Monitoring System</h2>
     
-
-  <div class="header">
-  	<h2>QR Code Student Attendance Monitoring System</h2>
-  </div>
-
-  <main>       
-        <nav class="nav">
-          <a href="dashboard.php" class="nav__link nav__link">
-            <i class="material-icons nav__icon">student</i>
-            <span class="nav__text">Student</span>
-          </a>
-
-          <a href="attendanceHistory.php" class="nav__link--active">
-            <i class="material-icons nav__icon">teacher</i>
-            <span class="nav__text">Lecturer</span>
-          </a>          
-        </nav>
-      </main>
-        
-
-    <div class="index">
-      <form>
-        <center><button href="lecturerLogin.php" style="width: 100px; height: 30px;">Lecturer</button>   
-        <button href="studentLogin.php" style="width: 100px; height: 30px;">Student</button></center>
-      </form>
-    </div>      
-        
-    <script src="" async defer></script>
+        <button href="lecturerDashboard.php" style="width: 100px; height: 30px;">Lecturer</button>   
+        <button href="studentDashboard.php" style="width: 100px; height: 30px;">Student</button>
+      </div>        
     </body>
 </html>
