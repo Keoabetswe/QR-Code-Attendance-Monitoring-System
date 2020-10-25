@@ -12,23 +12,20 @@
     <body>
        <main>       
         <nav class="nav">
-          <a href="attendanceHistory.php" class="nav__link--active">
+          <a href="attendees.php" class="nav__link--active">
             <i class="material-icons nav__icon">history</i>
-            <span class="nav__text">History</span>
+            <span class="nav__text">Attendees</span>
           </a>
           <a href="studentDashboard.php" class="nav__link nav__link">
             <i class="material-icons nav__icon">dashboard</i>
             <span class="nav__text">Dashboard</span>
           </a>
-          <a href="qrCodeDecoder.php" class="nav__link">
-            <i class="material-icons nav__icon">qr_code</i>
-            <span class="nav__text">Scan Code</span>
-          </a>
+      
         </nav>
        </main>
 
       <div class="header">
-  	    <h2>Attendance History</h2>
+  	    <h2>Attendees</h2>
       </div>       
 
 
