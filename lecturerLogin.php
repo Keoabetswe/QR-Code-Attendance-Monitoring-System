@@ -27,7 +27,7 @@
                 <input type="password" name="lecturer_password">
             </div>
             <div class="input-group">
-                <button type="submit" class="btn" name="lecturer_login">Login</button>
+                <input type="submit" class="btn" name="lecturer_login" value="Login">
             </div>
         </form>
     </div>      
