@@ -202,3 +202,10 @@ h1 {
   max-width: 700px;
   background-color: white;
 }
+
+/* QR Code */
+#qrcode {
+  width:160px;
+  height:160px;
+  margin-top:15px;
+}
