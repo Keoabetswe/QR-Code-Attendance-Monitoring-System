@@ -16,15 +16,15 @@
   </div>
 
     <div>
-        <form method="post" action="lecturerLogin.php">
+        <form method="post" action="server.php">
             <?php include('errors.php'); ?>
             <div class="input-group">
                 <label>Email</label>
-                <input type="text" name="lecturer_email" >
+                <input type="text" name="lecturer_email" placeholder="Email">
             </div>
             <div class="input-group">
                 <label>Password</label>
-                <input type="password" name="lecturer_password">
+                <input type="password" name="lecturer_password" placeholder="Password">
             </div>
             <div class="input-group">
                 <input type="submit" class="btn" name="lecturer_login" value="Login">
