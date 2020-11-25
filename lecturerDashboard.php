@@ -12,9 +12,6 @@
     <body>
       <main>       
         <nav class="nav">
-          <a href="attendanceHistory.php" class="nav__link--active">
-            <i class="material-icons nav__icon">list</i>
-            <span class="nav__text">Attendees</span>
           </a>
           <a href="lecturerDashboard.php" class="nav__link nav__link">
             <i class="material-icons nav__icon">dashboard</i>
@@ -22,7 +19,11 @@
           </a>
         </nav>
       </main>
-        
-    <script src="" async defer></script>
+
+      <div class="header">
+  	    <h2>Attendance</h2>
+        <img width='300' height='300' src='imageserver.php'>
+      </div>
+
     </body>
 </html>
