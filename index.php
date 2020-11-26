@@ -13,8 +13,8 @@
       <div class="header">
         <h2>QR Code Student Attendance Monitoring System</h2>
     
-        <center><button><a class="btn btn-primary" href="lecturerDashboard.php" style="width: 100px; height: 30px; color:grey" value="Lecturer" name="Lecturer"></button>
-        <button><a class="btn btn-primary" href="studentDashboard.php" style="width: 100px; height: 30px;" value="Student" name="Student"></button></center>
+        <button type="text" name="generateQrBtn" id="generateQrBtn" class="btn btn-lg btn-primary btn-block text-uppercase" ><a style="text-decoration:none; color:white;" href="lecturerDashboard.php">Lecturer</a></button>
+        <button type="text" name="generateQrBtn" id="generateQrBtn" class="btn btn-lg btn-primary btn-block text-uppercase" ><a style="text-decoration:none; color:white;" href="studentDashboard.php">Student</a></button>
       </div>        
     </body>
 </html>
