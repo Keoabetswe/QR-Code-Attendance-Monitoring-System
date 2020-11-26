@@ -13,7 +13,7 @@
       <div class="header">
         <h2>QR Code Student Attendance Monitoring System</h2>
     
-        <center><button><a class="btn btn-primary" href="lecturerDashboard.php" style="width: 100px; height: 30px;" value="Lecturer" name="Lecturer"></button>
+        <center><button><a class="btn btn-primary" href="lecturerDashboard.php" style="width: 100px; height: 30px; color:grey" value="Lecturer" name="Lecturer"></button>
         <button><a class="btn btn-primary" href="studentDashboard.php" style="width: 100px; height: 30px;" value="Student" name="Student"></button></center>
       </div>        
     </body>
