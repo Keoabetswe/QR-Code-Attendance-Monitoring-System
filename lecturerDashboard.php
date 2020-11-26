@@ -23,10 +23,6 @@
            
         }
 
-        #generateQrForm
-        {
-
-        }
         </style>
     </head>
     <body>
@@ -47,8 +43,8 @@
                     <form id="generateQrForm" class="form-signin">
                     <h5 class="card-title text-center">Generate QR Code</h5>
                         <div class="form-label-group">
-                            <label for="inputEmail">Enter Module Code<span style="color: #FF0000">*</span></label>
-                            <input type="text" name="qrText" id="qrText" class="form-control" required placeholder="Enter module code to generate QR (e.g. P4)">
+                            <label for="inputEmail">Enter Module Code<span style="color: #FF0000"></span></label>
+                            <input type="text" name="qrText" id="qrText" class="form-control" required placeholder="e.g. P4">
                         </div> <br/>
                        <div id="generatedQr text-center">
                             <img src="" id="generatedQrImg" class="center-block">
