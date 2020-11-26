@@ -8,6 +8,26 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
         <link rel="stylesheet" href="css/style.css">
+
+         <link rel="icon" href="https://codingbirdsonline.com/wp-content/uploads/2019/12/cropped-coding-birds-favicon-2-1-192x192.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script type="text/javascript" src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
+
+        <style>
+        .center-block {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+           
+        }
+
+        #generateQrForm
+        {
+
+        }
+        </style>
     </head>
     <body>
       <main>       
@@ -21,10 +41,20 @@
       </main>
 
       <div class="header">
-  	    <h2>Attendance</h2>
-        <img width='300' height='300' src='imageserver.php'>
+  	    <h2>Attendance System</h2>
       </div>
-
-    
+      
+                    <form id="generateQrForm" class="form-signin">
+                    <h5 class="card-title text-center">Generate QR Code</h5>
+                        <div class="form-label-group">
+                            <label for="inputEmail">Enter Module Code<span style="color: #FF0000">*</span></label>
+                            <input type="text" name="qrText" id="qrText" class="form-control" required placeholder="Enter module code to generate QR (e.g. P4)">
+                        </div> <br/>
+                       <div id="generatedQr text-center">
+                            <img src="" id="generatedQrImg" class="center-block">
+                        </div> <br/>
+                        <button type="submit" name="generateQrBtn" id="generateQrBtn" class="btn btn-lg btn-primary btn-block text-uppercase" >Generate QR</button>
+                    </form>
+      <script type="text/javascript" src="js/generate-qr-js.js"></script>
     </body>
-</html>
+</html></style>
